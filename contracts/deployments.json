@@ -1,0 +1,23 @@
+{
+  "sepolia": {
+    "chainId": 11155111,
+    "token": "0x57bfdA49355F95799399Deb4ff79aAB8d1971914",
+    "faucet": "0x072330AEabcfD09D72b08c48EfcfdC1DAecd02ac",
+    "owner": "0x75EF27c73bf90528350A7FF7365A000B7A5b0cdF",
+    "operator": "0x75EF27c73bf90528350A7FF7365A000B7A5b0cdF"
+  },
+  "hoodi": {
+    "chainId": 560048,
+    "token": "0x57bfdA49355F95799399Deb4ff79aAB8d1971914",
+    "faucet": "0x79Ab181E79dac8E5480D69e1902469D6718CAcaF",
+    "owner": "0x75EF27c73bf90528350A7FF7365A000B7A5b0cdF",
+    "operator": "0x75EF27c73bf90528350A7FF7365A000B7A5b0cdF"
+  },
+  "bsc_testnet": {
+    "chainId": 97,
+    "token": "0x57bfdA49355F95799399Deb4ff79aAB8d1971914",
+    "faucet": "0x2A2321015336B572EBb9250f64F0325d846e929E",
+    "owner": "0x75EF27c73bf90528350A7FF7365A000B7A5b0cdF",
+    "operator": "0x75EF27c73bf90528350A7FF7365A000B7A5b0cdF"
+  }
+}

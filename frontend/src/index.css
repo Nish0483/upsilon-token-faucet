@@ -1,0 +1,4 @@
+/* Global reset only — layout lives in App.css */
+body {
+  margin: 0;
+}

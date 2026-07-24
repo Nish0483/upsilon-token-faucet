@@ -1,0 +1,28 @@
+{
+  "name": "ups-faucet-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "proxycheck-ts": "^0.0.11",
+    "request-ip": "^3.3.0",
+    "viem": "^2.55.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.0",
+    "@types/request-ip": "^0.0.41",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,25 @@
+# Foundry
+contracts/cache/
+contracts/out/
+contracts/broadcast/*/31337/
+contracts/broadcast/**/dry-run/
+contracts/.env
+
+# Docs
+docs/
+
+# Dotenv
+.env
+
+# Node / frontend / backend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+backend/node_modules/
+backend/dist/
+backend/.env
+
+# IDE
+.idea/
+.vscode/
