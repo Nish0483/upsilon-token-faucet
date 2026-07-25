@@ -202,18 +202,22 @@ app.post("/api/drip", limiter, async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`UPX faucet API on :${PORT}`);
-  console.log(`Operator: ${getOperatorAccount().address}`);
-  console.log(
-    `Limits: ${MAX_CLAIMS_PER_IP_PER_DAY}/day per IP, ${RATE_LIMIT_PER_MIN}/min per IP`,
-  );
-  if (!process.env.PROXYCHECK_API_KEY?.trim()) {
-    console.warn("[warn] PROXYCHECK_API_KEY unset — VPN/proxy checks are skipped");
-  }
-  console.log("Faucets:", {
-    sepolia: CHAINS.sepolia.faucet,
-    hoodi: CHAINS.hoodi.faucet,
-    bsc: CHAINS.bsc.faucet,
+export default app;
+
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`UPX faucet API on :${PORT}`);
+    console.log(`Operator: ${getOperatorAccount().address}`);
+    console.log(
+      `Limits: ${MAX_CLAIMS_PER_IP_PER_DAY}/day per IP, ${RATE_LIMIT_PER_MIN}/min per IP`,
+    );
+    if (!process.env.PROXYCHECK_API_KEY?.trim()) {
+      console.warn("[warn] PROXYCHECK_API_KEY unset — VPN/proxy checks are skipped");
+    }
+    console.log("Faucets:", {
+      sepolia: CHAINS.sepolia.faucet,
+      hoodi: CHAINS.hoodi.faucet,
+      bsc: CHAINS.bsc.faucet,
+    });
   });
-});
+}
